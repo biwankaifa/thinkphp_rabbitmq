@@ -1,0 +1,33 @@
+{
+    "name": "biwankaifa/thinkphp_rabbitmq",
+    "description": "常用RabbitMQ队列操作",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "彼玩网络",
+            "email": "1115000280@qq.com"
+        },
+        {
+            "name": "jinyicheng",
+            "email": "234067496@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "php-amqplib/php-amqplib": "^2.11",
+        "ext-json": "*",
+        "topthink/framework": "^6.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "biwankaifa\\thinkphp_rabbitmq\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "config": {
+                "rabbitmq": "src/config.php"
+            }
+        }
+    }
+}
